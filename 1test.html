@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Pirmas Testas</h1>
+        <label>1. Kiek bus 2+2+2?</label>
+        <input type="test" id = "1q"/>
+        <label>2. Kiek bus 20m/s paversta km/h?</label>
+        <input type="test" id = "2q"/>
+        <label>3. Kiek bus 72km/h paversta m/s?</label>
+        <input type="test" id = "3q"/>
+        <input type="submit" onclick="tikrinti();">
+    </body>
+    <script>
+        function tikrinti()
+        {
+            var input1 = document.getElementById("1q").value;
+            var input2 = document.getElementById("2q").value;
+            var input3 = document.getElementById("3q").value;
+            alert(input1 == "6" && input2 == "72"&& input3 == "20");
+        }
+    </script>
+</html>
